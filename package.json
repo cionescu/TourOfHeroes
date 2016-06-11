@@ -1,6 +1,10 @@
 {
-  "name": "angular2-boilerplate",
-  "version": "1.0.0",
+  "name": "TourOfHeroes",
+  "version": "0.0.1",
+  "description": "TourOfHeroes Angular2 Tutorial Built with TypeScript",
+  "keywords": ["Angular2", "TourOfHeroes"],
+  "author": "Catalin Ionescu",
+  "repository": "https://github.com/cionescu/TourOfHeroes.git",
   "scripts": {
     "lite": "lite-server",
     "gulp": "gulp",

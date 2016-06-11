@@ -1,4 +1,4 @@
-System.register(['angular2/core', './hero.service', './hero-detail.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,43 +10,23 @@ System.register(['angular2/core', './hero.service', './hero-detail.component'], 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hero_service_1, hero_detail_component_1;
+    var core_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (hero_service_1_1) {
-                hero_service_1 = hero_service_1_1;
-            },
-            function (hero_detail_component_1_1) {
-                hero_detail_component_1 = hero_detail_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
-                function AppComponent(_heroService) {
-                    this._heroService = _heroService;
-                    this.title = 'Tour of Heroes';
-                    this.heroes = [];
+                function AppComponent() {
                 }
-                AppComponent.prototype.onSelect = function (hero) {
-                    this.selectedHero = hero;
-                };
-                AppComponent.prototype.getHeroes = function () {
-                    this.heroes = this._heroService.getHeroes();
-                };
-                AppComponent.prototype.ngOnInit = function () {
-                    this.getHeroes();
-                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        directives: [hero_detail_component_1.HeroDetailComponent],
-                        providers: [hero_service_1.HeroService],
-                        template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n    <ul class=\"heroes\">\n      <li *ngFor=\"#hero of heroes\"\n          (click)=\"onSelect(hero)\"\n          [class.selected]=\"hero === selectedHero\">\n        <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n      </li>\n    </ul>\n    <my-hero-detail [hero]=\"selectedHero\"></my-hero-detail>\n    "
+                        template: "\n    <h1>Angular 2 Boilerplate</h1>\n    <p>Hello World!</p>\n  ",
                     }), 
-                    __metadata('design:paramtypes', [hero_service_1.HeroService])
+                    __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
             }());
@@ -54,4 +34,5 @@ System.register(['angular2/core', './hero.service', './hero-detail.component'], 
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFTQTtnQkFBQTtnQkFFQSxDQUFDO2dCQVREO29CQUFDLGdCQUFTLENBQUM7d0JBQ1QsUUFBUSxFQUFFLFFBQVE7d0JBQ2xCLFFBQVEsRUFBRSxtRUFHVDtxQkFDRixDQUFDOztnQ0FBQTtnQkFHRixtQkFBQztZQUFELENBRkEsQUFFQyxJQUFBO1lBRkQsdUNBRUMsQ0FBQSIsImZpbGUiOiJhcHAuY29tcG9uZW50LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtDb21wb25lbnR9IGZyb20gJ2FuZ3VsYXIyL2NvcmUnO1xuXG5AQ29tcG9uZW50KHtcbiAgc2VsZWN0b3I6ICdteS1hcHAnLFxuICB0ZW1wbGF0ZTogYFxuICAgIDxoMT5Bbmd1bGFyIDIgQm9pbGVycGxhdGU8L2gxPlxuICAgIDxwPkhlbGxvIFdvcmxkITwvcD5cbiAgYCxcbn0pXG5leHBvcnQgY2xhc3MgQXBwQ29tcG9uZW50IHtcblxufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

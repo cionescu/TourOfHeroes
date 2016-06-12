@@ -8,7 +8,6 @@ var appProd = 'app/';
 
 var filesToMove = [
   "node_modules/es6-shim/es6-shim.min.js",
-  // "node_modules/systemjs/dist/system-polyfills.js",
   "node_modules/angular2/es6/dev/src/testing/shims_for_IE.js",
   "node_modules/angular2/bundles/angular2-polyfills.js",
   "node_modules/systemjs/dist/system.src.js",
@@ -73,7 +72,7 @@ gulp.task('build-html', function () {
 
 
 gulp.task('move', ['move-css'], function(cb){
-  gulp.src(filesToMove, { base: './' })
+  gulp.src(filesToMove)
     .pipe(gulp.dest(appProd + "/vendor/"));
   return cb(null);
 });

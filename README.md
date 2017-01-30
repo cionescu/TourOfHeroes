@@ -10,3 +10,5 @@
 <div *ngIf="selectedHero">
 *equivalent of ngClass*
 [class.selected]="hero === selectedHero"
+*pass object to component*
+<my-hero-detail [hero]="selectedHero"></my-hero-detail>

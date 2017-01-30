@@ -12,3 +12,7 @@
 [class.selected]="hero === selectedHero"
 *pass object to component*
 <my-hero-detail [hero]="selectedHero"></my-hero-detail>
+
+# Questions:
+
+* Why do we need `moduleId: module.id`?

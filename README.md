@@ -1,5 +1,6 @@
 # Angular 2 stuff
 
+
 *two way binding*
 <input [(ngModel)]="hero.name" placeholder="name">
 *for loop*
